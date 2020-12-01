@@ -8,8 +8,11 @@ public class SinglyLinkedList<T extends Comparable<T>>{
 
     private Node<T> tail;
     private Node<T> head;
-    private Integer size;
+    private Integer size = 0;
 
+    public SinglyLinkedList() {
+
+    }
 
     public T get(Integer index){
         Integer tIndex = head.getIndex();
